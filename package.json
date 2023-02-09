@@ -9,10 +9,18 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@expo/webpack-config": "^0.17.2",
     "expo": "~47.0.12",
     "expo-status-bar": "~1.4.2",
+    "radio-buttons-react-native": "^1.0.4",
     "react": "18.1.0",
-    "react-native": "0.70.5"
+    "react-dom": "18.1.0",
+    "react-native": "0.70.5",
+    "react-native-date-picker": "^4.2.6",
+    "react-native-elements": "^3.4.3",
+    "react-native-modal-datetime-picker": "^14.0.1",
+    "react-native-modern-datepicker": "^1.0.0-beta.91",
+    "react-native-web": "~0.18.9"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"

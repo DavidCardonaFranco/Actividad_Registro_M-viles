@@ -10,6 +10,7 @@ import {
 } from "react-native";
 import { Form } from "./src/components/Form";
 import { FormRegistro } from "./src/components/FormRegistro";
+import  { Form2 } from "./src/components/Form2";
 
 export default function App() {
   const [text, onChangeText] = useState("Text");
@@ -17,6 +18,7 @@ export default function App() {
   const [modalVisible2, setModalVisible2] = useState(false);
   const [modalVisibleForm, setModalVisibleForm] = useState(false);
   const [formRegistro, setFormRegistro] = useState(false);
+  const [modalRegistro, setModalRegistro] = useState(false);
 
   return (
     <View style={styles.container}>
@@ -61,6 +63,13 @@ export default function App() {
         <Text style={styles.btnTxtStyle}>Realizar Registro</Text>
       </Pressable>
       <FormRegistro formRegistro={formRegistro}></FormRegistro>
+
+      {/* FORM 2 */}
+      <Pressable
+        onPress={() => setModalRegistro(true)} style={styles.btnStyle}>
+        <Text style={styles.btnTxtStyle}>Registrarme</Text>
+      </Pressable>
+      <Form2 modalRegistro={modalRegistro} setModalRegistro= {setModalRegistro}></Form2>
 
       {/* Sección ventana modal */}
       <Modal animationType="slide" visible={modalVisible}>
